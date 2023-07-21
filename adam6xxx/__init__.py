@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import enum
 import time
 from typing import List
