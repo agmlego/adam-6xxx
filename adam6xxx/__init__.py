@@ -91,7 +91,7 @@ class ADAM6XXX:
         Raises:
             pymodbus.exceptions.ConnectionException if the module is not responding
         """
-        return self._client.read_coils(address=self.digital_outputs[index]).bits[index]
+        return self._client.read_coils(address=self.digital_outputs[index]).bits[0]
 
     def get_digital_input(self, index: int) -> bool:
         """
